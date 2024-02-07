@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+  </head>
+  <body>
+    <h1>Message</h1>
+    <form action="/new" method="POST">
+      <label for="user">Name:</label>
+      <input
+        type="text"
+        name="user"
+        id="user"
+        placeholder="username"
+        required
+      />
+      <label for="text">Message:</label>
+      <textarea
+        type="text"
+        name="text"
+        id="text"
+        placeholder="message"
+        required
+      ></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
