@@ -15,7 +15,12 @@ router.get("/", function (req, res, next) {
       added: new Date(),
     },
   ];
-  res.render("index", { title: "Mini Messageboard", messages: messages });
+  res.render("index", { title: "Mini Messageboard", messages });
+});
+
+/* GET new page. */
+router.get("/new", function (req, res, next) {
+  res.render("new", { title: "Mini Message Board" });
 });
 
 module.exports = router;
